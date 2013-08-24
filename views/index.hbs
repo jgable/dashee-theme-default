@@ -1,0 +1,13 @@
+{{!< default}}
+<div id="container">
+	<h1>{{title}}</h1>
+	<div id="blocks">
+		{{#blocks}}
+		<!-- block-{{id}} -->
+		{{{html}}}
+		{{/blocks}}
+		{{^blocks}}
+		<!-- No Blocks Found -->
+		{{/blocks}}
+	</div>
+</div>
