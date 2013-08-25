@@ -3,3 +3,26 @@
 	max-width: 1000px;
 	margin: 0 auto;
 }
+
+.block {
+	width: 30%;
+	margin: 1% 1% 1% 0;
+	border: solid 2px #555;
+
+	> header, .header {
+		h3 { padding: 10px; margin: 0; }
+		border-bottom: solid 2px #555;
+		min-height: 20px;
+	}
+
+	> article, .body {
+		padding: 10px;
+		min-height: 200px;
+	}
+
+	> footer, .footer {
+		min-height: 40px;
+
+		border-top: solid 2px #555;
+	}
+}

@@ -26,7 +26,11 @@
     "grunt-mocha-cli": "~1.0.7",
     "grunt-jshint2": "~0.1.5",
     "grunt": "~0.4.1",
-    "sinon": "~1.7.3"
+    "sinon": "~1.7.3",
+    "express": "~3.3.5",
+    "express-hbs": "~0.2.0",
+    "mincer": "~0.5.7",
+    "less": "~1.4.2"
   },
   "dependencies": {
     "async": "~0.2.9",

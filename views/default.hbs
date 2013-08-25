@@ -28,13 +28,22 @@
         {{{dasheeBlockScripts}}}
         <!-- Include script that will load the dashee application -->
         <script>
-            console.log("Theme loaded");
+            +(function (require, undefined) {
+                "use strict";
 
-            require(['dashee'], function (DasheeApp) {
-                var app = new DasheeApp();
+                console.log("Theme loaded");
 
-                app.load();
-            });
+                if (!require) {
+                    // Happens when testing
+                    return;
+                }
+
+                require(['dashee'], function (DasheeApp) {
+                    var app = new DasheeApp();
+
+                    app.load();
+                });
+            }(window.require));
         </script>
     </body>
 </html>
