@@ -5,13 +5,19 @@
 }
 
 .block {
+	.altBackground {
+		background-color: @blockAltBackground;
+	}
+
 	width: 30%;
 	margin: 1% 1% 1% 0;
-	border: solid 2px #555;
+	float: left;
 
 	> header, .header {
 		h3 { padding: 10px; margin: 0; }
-		border-bottom: solid 2px #555;
+
+		.altBackground;
+		
 		min-height: 20px;
 	}
 
@@ -23,6 +29,6 @@
 	> footer, .footer {
 		min-height: 40px;
 
-		border-top: solid 2px #555;
+		.altBackground;
 	}
 }
